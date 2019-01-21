@@ -1,5 +1,5 @@
 {
-    "name": "bakerkretzmar/nova-settings-tool",
+    "name": "ajmariduena/nova-settings-tool",
     "description": "A Laravel Nova tool to manage app settings.",
     "authors": [
         {
@@ -14,7 +14,7 @@
         "settings",
         "tool"
     ],
-    "homepage": "https://github.com/bakerkretzmar/nova-settings-tool",
+    "homepage": "https://github.com/ajmariduena/nova-settings-tool.git",
     "license": "MIT",
     "repositories": [
         {
