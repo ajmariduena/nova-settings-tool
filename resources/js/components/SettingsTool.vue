@@ -5,13 +5,13 @@
             <loader class="text-60" />
         </div>
 
-        <div v-for="group in settingConfig">
+        <div v-for="(group, index) in settingConfig" :key="index">
 
             <heading class="mb-6">{{ group.name }}</heading>
 
             <card class="relative overflow-hidden mb-8">
 
-                <div v-for="setting in group.settings">
+                <div v-for="(setting, index) in group.settings" :key="index">
 
                     <toggle-setting
                         v-if="setting.type == 'toggle'"
@@ -27,6 +27,25 @@
                         :name="setting.name"
                         :description="setting.description || ''"
                         :link="setting.link || {}"
+                        :setting="{ key: setting.key, value: settings[setting.key] }"
+                        @input="handleInput"
+                    />
+
+                    <text-area-setting
+                        v-if="setting.type == 'textarea'"
+                        :name="setting.name"
+                        :description="setting.description || ''"
+                        :link="setting.link || {}"
+                        :setting="{ key: setting.key, value: settings[setting.key] }"
+                        @input="handleInput"
+                    />
+
+                    <code-setting
+                        v-if="setting.type == 'code'"
+                        :name="setting.name"
+                        :description="setting.description || ''"
+                        :link="setting.link || {}"
+                        :language="setting.language"
                         :setting="{ key: setting.key, value: settings[setting.key] }"
                         @input="handleInput"
                     />
@@ -51,13 +70,17 @@
 </template>
 
 <script>
-import ToggleSetting from './partials/Toggle'
 import TextSetting from './partials/Text'
+import CodeSetting from './partials/Code'
+import ToggleSetting from './partials/Toggle'
+import TextAreaSetting from './partials/TextArea'
 
 export default {
     components: {
+        TextSetting,
+        CodeSetting,
         ToggleSetting,
-        TextSetting
+        TextAreaSetting
     },
 
     data: () => ({
