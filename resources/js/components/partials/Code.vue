@@ -3,7 +3,7 @@
 
         <setting-label>{{ name }}</setting-label>
 
-        <div class="w-1/2 py-6 px-8">
+        <div class="w-3/4 py-6 px-8">
             <!-- <textarea
                 :value="setting.value"
                 @input="input"
@@ -127,7 +127,7 @@ export default {
                 lineNumbers: true,
                 theme: 'monokai',
                 viewportMargin: Infinity,
-                mode: this.language || 'json'
+                mode: 'htmlmixed'
             }
         }
 

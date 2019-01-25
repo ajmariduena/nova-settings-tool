@@ -1,6 +1,6 @@
 <?php
 
-namespace Bakerkretzmar\SettingsTool;
+namespace Ajmariduena\SettingsTool;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
@@ -24,8 +24,8 @@ class SettingsTool extends Tool
      */
     public function boot()
     {
-        Nova::script('settings-tool', __DIR__.'/../dist/js/tool.js');
-        Nova::style('settings-tool', __DIR__.'/../dist/css/tool.css');
+        Nova::script('settings-tool', __DIR__ . '/../dist/js/tool.js');
+        Nova::style('settings-tool', __DIR__ . '/../dist/css/tool.css');
     }
 
     /**

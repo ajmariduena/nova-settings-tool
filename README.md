@@ -29,7 +29,7 @@ Register the tool with Nova in the `tools` method of your `NovaServiceProvider`:
 ```php
 // in app/Providers/NovaServiceProvider.php
 
-use Bakerkretzmar\SettingsTool\SettingsTool;
+use Ajmariduena\SettingsTool\SettingsTool;
 
 // ...
 

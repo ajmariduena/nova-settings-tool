@@ -1,8 +1,8 @@
 <?php
 
-namespace Bakerkretzmar\SettingsTool\Http\Middleware;
+namespace Ajmariduena\SettingsTool\Http\Middleware;
 
-use Bakerkretzmar\SettingsTool\SettingsTool;
+use Ajmariduena\SettingsTool\SettingsTool;
 
 class Authorize
 {

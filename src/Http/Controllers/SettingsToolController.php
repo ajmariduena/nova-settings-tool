@@ -1,6 +1,6 @@
 <?php
 
-namespace Bakerkretzmar\SettingsTool\Http\Controllers;
+namespace Ajmariduena\SettingsTool\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Spatie\Valuestore\Valuestore;
@@ -24,7 +24,7 @@ class SettingsToolController extends Controller
 
         foreach ($settingConfig as $object) {
             foreach ($object['settings'] as $settingObject) {
-                if (! array_key_exists($settingObject['key'], $settings)) {
+                if (!array_key_exists($settingObject['key'], $settings)) {
                     $settings[$settingObject['key']] = $settingObject['type'] == 'toggle' ? false : '';
                 }
             }

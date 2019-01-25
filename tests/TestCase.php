@@ -1,8 +1,8 @@
 <?php
 
-namespace Bakerkretzmar\SettingsTool\Tests;
+namespace Ajmariduena\SettingsTool\Tests;
 
-use Bakerkretzmar\SettingsTool\SettingsToolServiceProvider;
+use Ajmariduena\SettingsTool\SettingsToolServiceProvider;
 use Illuminate\Support\Facades\Route;
 
 use Orchestra\Testbench\TestCase as Orchestra;

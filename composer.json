@@ -1,13 +1,6 @@
 {
     "name": "ajmariduena/nova-settings-tool",
     "description": "A Laravel Nova tool to manage app settings.",
-    "authors": [
-        {
-            "name": "Jacob Baker-Kretzmar",
-            "email": "jacobtbk@gmail.com",
-            "role": "Developer"
-        }
-    ],
     "keywords": [
         "laravel",
         "nova",
@@ -33,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Bakerkretzmar\\SettingsTool\\": "src/"
+            "Ajmariduena\\SettingsTool\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bakerkretzmar\\SettingsTool\\Tests\\": "tests"
+            "Ajmariduena\\SettingsTool\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Bakerkretzmar\\SettingsTool\\SettingsToolServiceProvider"
+                "Ajmariduena\\SettingsTool\\SettingsToolServiceProvider"
             ]
         }
     },

@@ -45,7 +45,6 @@
                         :name="setting.name"
                         :description="setting.description || ''"
                         :link="setting.link || {}"
-                        :language="setting.language"
                         :setting="{ key: setting.key, value: settings[setting.key] }"
                         @input="handleInput"
                     />

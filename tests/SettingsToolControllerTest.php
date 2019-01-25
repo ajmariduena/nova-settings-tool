@@ -1,8 +1,8 @@
 <?php
 
-namespace Bakerkretzmar\SettingsTool\Tests;
+namespace Ajmariduena\SettingsTool\Tests;
 
-use Bakerkretzmar\SettingsTool\Http\Controllers\SettingsToolController;
+use Ajmariduena\SettingsTool\Http\Controllers\SettingsToolController;
 
 use Spatie\Valuestore\Valuestore;
 
