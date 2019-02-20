@@ -40,6 +40,15 @@
                         @input="handleInput"
                     />
 
+                    <date-time-setting
+                        v-if="setting.type == 'date'"
+                        :name="setting.name"
+                        :description="setting.description || ''"
+                        :link="setting.link || {}"
+                        :setting="{ key: setting.key, value: settings[setting.key] }"
+                        @input="handleInput"
+                    />
+
                     <code-setting
                         v-if="setting.type == 'code'"
                         :name="setting.name"
@@ -73,13 +82,15 @@ import TextSetting from './partials/Text'
 import CodeSetting from './partials/Code'
 import ToggleSetting from './partials/Toggle'
 import TextAreaSetting from './partials/TextArea'
+import DateTimeSetting from './partials/DateTime'
 
 export default {
     components: {
         TextSetting,
         CodeSetting,
         ToggleSetting,
-        TextAreaSetting
+        TextAreaSetting,
+        DateTimeSetting
     },
 
     data: () => ({
