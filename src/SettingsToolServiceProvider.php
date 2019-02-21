@@ -3,8 +3,10 @@
 namespace Ajmariduena\SettingsTool;
 
 use Laravel\Nova\Nova;
+use Spatie\Valuestore\Valuestore;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Ajmariduena\SettingsTool\Classes\Settings;
 use Ajmariduena\SettingsTool\Http\Middleware\Authorize;
 
 class SettingsToolServiceProvider extends ServiceProvider
