@@ -1,7 +1,7 @@
 <template>
     <div class="flex border-b border-40">
         <setting-label>{{ name }}</setting-label>
-        <div class="w-1/2 py-6 px-8">
+        <div class="w-1/2 py-6 px-8 flex items-center">
             <date-time-picker
                 class="w-full form-control form-input form-input-bordered"
                 :name="setting.name"
