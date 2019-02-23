@@ -140,7 +140,7 @@ export default {
             })
         })
 
-        this.doc.setValue(this.setting.value)
+        this.doc.setValue(this.setting.value || "")
     },
 
     components: {
