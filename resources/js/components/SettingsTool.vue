@@ -90,6 +90,7 @@ export default {
         CodeSetting,
         ToggleSetting,
         TextAreaSetting,
+        DateTimeSetting,
         FileSetting
     },
 
