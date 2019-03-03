@@ -28,6 +28,7 @@
                     <file-setting
                         v-if="setting.type == 'file'"
                         :name="setting.name"
+                        :accept="setting.accept"
                         :description="setting.description || ''"
                         :link="setting.link || {}"
                         :setting="{ key: setting.key, value: settings[setting.key] }"

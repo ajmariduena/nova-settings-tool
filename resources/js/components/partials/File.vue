@@ -15,10 +15,11 @@
             <input 
                 type="file"
                 @input="input"
+                :accept="accept"
                 class="form-file-input"
-                id="image"
+                :id="setting.key"
             />
-            <label for="image" class="form-file-btn btn btn-default btn-primary">
+            <label :for="setting.key" class="form-file-btn btn btn-default btn-primary">
                 {{ __('Choose File') }}
             </label>
 
@@ -38,6 +39,7 @@ export default {
         name: String,
         setting: Object,
         description: String,
+        accept: String,
         link: Object
     },
 

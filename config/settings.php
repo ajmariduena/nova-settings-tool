@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Settings Path
@@ -31,6 +30,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Settings Disk
+    |--------------------------------------------------------------------------
+    |
+    | Specified disk for storing settings files.
+    |
+    */
+
+    'disk' => 'public',
+
+    /*
+    |--------------------------------------------------------------------------
     | Settings
     |--------------------------------------------------------------------------
     |
@@ -45,13 +55,10 @@ return [
     */
 
     'panels' => [
-
         [
-
             'name' => 'Settings',
 
             'settings' => [
-
                 [
                     'key' => 'facebook_url',
                     'name' => 'Facebook',
@@ -73,17 +80,13 @@ return [
                         'url' => '/documentation#twitter_url',
                     ],
                 ],
-
             ],
-
         ],
 
         [
-
             'name' => 'Features',
 
             'settings' => [
-
                 [
                     'key' => 'new_feature',
                     'name' => 'New Feature',
@@ -94,11 +97,7 @@ return [
                         'url' => '/documentation#new_feature',
                     ],
                 ],
-
             ],
-
         ],
-
     ],
-
 ];

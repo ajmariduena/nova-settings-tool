@@ -52,13 +52,29 @@ class SettingsToolController extends Controller
 
                 $settings->put($setting, Storage::url($filePath));
             } else {
-                if ($value === 'null') {
-                    $value = null;
-                }
+                $value = $this->castValue($value);
                 $settings->put($setting, $value);
             }
         }
 
         return response($settings->all(), 202);
+    }
+
+    private function castValue($value)
+    {
+        switch ($value) {
+            case 'null':
+                return null;
+                break;
+            case 'true':
+                return true;
+                break;
+            case 'false':
+                return false;
+                break;
+            default:
+                return $value;
+                break;
+        }
     }
 }
